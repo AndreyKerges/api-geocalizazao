@@ -1,0 +1,115 @@
+/**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+/* 
+  * Always set the map height explicitly to define the size of the div element
+  * that contains the map. 
+  */
+  #map {
+    height: 100%;
+  }
+  
+  /* Optional: Makes the sample page fill the window. */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: "Roboto", "sans-serif";
+    line-height: 30px;
+    padding-left: 10px;
+
+  }
+  
+  #floating-panel {
+    position: absolute;
+    top: 5px;
+    left: 60%;
+    margin-left: -225px;
+    width: 260px;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    margin-top: 180px;
+  }
+  
+  #latlng {
+    width: 225px;
+  }
+
+  .container {
+    position: absolute;
+    top: 5px;
+    left: 40%;
+    margin-left: -150px;
+    width: 200px;
+    height: 100px;
+    z-index: 5;
+    border: solid black 7px;
+    border-radius: 20px;
+    text-align: center;
+    background: lightgray;
+    color: black;
+    padding: 5px;
+    margin-top: 50px;
+  }
+  
+  .container:hover {
+    background: white;
+    color: green;
+  }
+  
+  button {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  button:focus,
+  button:hover {
+    color: black;
+  }
+  
+  button:focus:after,
+  button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+  
